@@ -1,4 +1,4 @@
-        * {
+    * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -526,4 +526,328 @@
         .contact-card p {
             color: #a0aec0;
             word-break: break-word;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .hero {
+                padding: 0 3%;
+            }
+            
+            .hero-title {
+                font-size: 3.5rem;
+            }
+            
+            .profile-image {
+                width: 300px;
+                height: 300px;
+            }
+            
+            .intro h2, .projects h2, .working-hours h2, .contact h2 {
+                font-size: 2.5rem;
+            }
+            
+            .video-container {
+                height: 60vh;
+            }
+            
+            .modal-video {
+                height: 60vh;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                gap: 40px;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+                order: 2;
+            }
+            
+            .hero-image {
+                order: 1;
+                margin-bottom: 20px;
+            }
+            
+            .hero-brand {
+                font-size: 1rem;
+                margin-bottom: 15px;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 30px;
+                align-items: center;
+            }
+            
+            .stat-card {
+                min-width: 200px;
+                padding: 20px;
+            }
+            
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            
+            .stat-label {
+                font-size: 0.8rem;
+            }
+            
+            .profile-image {
+                width: 250px;
+                height: 250px;
+            }
+            
+            .intro, .projects, .working-hours, .contact {
+                padding: 60px 20px;
+            }
+            
+            .intro h2, .projects h2, .working-hours h2, .contact h2 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            
+            .intro p {
+                font-size: 1rem;
+            }
+            
+            .working-hours-text {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+            
+            .video-container {
+                height: 50vh;
+                border-radius: 15px;
+            }
+            
+            .video-overlay {
+                padding: 20px;
+            }
+            
+            .video-title {
+                font-size: 1.3rem;
+            }
+            
+            .video-description {
+                font-size: 0.9rem;
+            }
+            
+            .slider-controls {
+                gap: 15px;
+                margin-top: 30px;
+            }
+            
+            .slider-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 18px;
+            }
+            
+            .hours-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .hours-card {
+                padding: 30px;
+            }
+            
+            .hours-card h3 {
+                font-size: 1.3rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .contact-card {
+                padding: 30px;
+            }
+            
+            .contact-card h3 {
+                font-size: 1.3rem;
+            }
+            
+            .modal-content {
+                width: 95%;
+                border-radius: 15px;
+            }
+            
+            .modal-video {
+                height: 50vh;
+            }
+            
+            .modal-info {
+                padding: 20px;
+            }
+            
+            .close-modal {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                top: 15px;
+                right: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 15px;
+                gap: 30px;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            .hero-stats {
+                gap: 10px;
+            }
+            
+            .stat-card {
+                min-width: 150px;
+                padding: 15px;
+            }
+            
+            .stat-number {
+                font-size: 1.5rem;
+            }
+            
+            .profile-image {
+                width: 200px;
+                height: 200px;
+            }
+            
+            .intro, .projects, .working-hours, .contact {
+                padding: 40px 15px;
+            }
+            
+            .intro h2, .projects h2, .working-hours h2, .contact h2 {
+                font-size: 1.8rem;
+            }
+            
+            .intro p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+            
+            .working-hours-text {
+                font-size: 0.9rem;
+            }
+            
+            .video-container {
+                height: 40vh;
+                border-radius: 10px;
+            }
+            
+            .video-overlay {
+                padding: 15px;
+            }
+            
+            .video-title {
+                font-size: 1.1rem;
+            }
+            
+            .video-description {
+                font-size: 0.8rem;
+            }
+            
+            .slider-controls {
+                gap: 10px;
+                margin-top: 20px;
+            }
+            
+            .slider-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 16px;
+            }
+            
+            .hours-card, .contact-card {
+                padding: 20px;
+            }
+            
+            .hours-card h3, .contact-card h3 {
+                font-size: 1.2rem;
+            }
+            
+            .hours-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            
+            .modal-video {
+                height: 40vh;
+            }
+            
+            .close-modal {
+                width: 35px;
+                height: 35px;
+                font-size: 18px;
+                top: 10px;
+                right: 10px;
+            }
+        }
+
+        /* Landscape orientation for tablets */
+        @media (max-width: 1024px) and (orientation: landscape) {
+            .hero {
+                flex-direction: row;
+                text-align: left;
+            }
+            
+            .hero-content {
+                order: 1;
+            }
+            
+            .hero-image {
+                order: 2;
+            }
+            
+            .hero-stats {
+                flex-direction: row;
+                gap: 20px;
+            }
+        }
+
+        /* Very small screens */
+        @media (max-width: 320px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .profile-image {
+                width: 180px;
+                height: 180px;
+            }
+            
+            .stat-card {
+                min-width: 120px;
+                padding: 12px;
+            }
+            
+            .intro h2, .projects h2, .working-hours h2, .contact h2 {
+                font-size: 1.6rem;
+            }
+            
+            .video-container {
+                height: 35vh;
+            }
+            
+            .modal-video {
+                height: 35vh;
+            }
         }
